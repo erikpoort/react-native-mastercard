@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <React/RCTBridgeModule.h>
 #import <React/RCTUtils.h>
+#import <MCCMerchant/MCCMerchant.h>
 
-@interface RNMasterCardModule : NSObject <RCTBridgeModule>
+@interface RNMasterCardModule : NSObject <RCTBridgeModule, MCCMerchantDelegate>
 
 @end
