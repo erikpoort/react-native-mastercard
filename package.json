@@ -1,6 +1,6 @@
 {
   "name": "react-native-mastercard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Masterpass Checkout SDK ReactNative module.",
   "files": ["src", "ios", "android"],
   "main": "src/index.js",
