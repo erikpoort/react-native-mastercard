@@ -16,7 +16,7 @@ static NSString *const kRejectCode = @"MasterCardModule";
 RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(
-    merchantUrlScheme: (NSString *)merchantUrlScheme
+    initialize: (NSString *)merchantUrlScheme
     merchantName: (NSString *)merchantName
     merchantUniversalLink: (NSString *)merchantUniversalLink
     merchantUserId: (NSString *)merchantUserId
