@@ -44,15 +44,15 @@ class RNMasterCardModule extends ReactContextBaseJavaModule implements Masterpas
     }
 
     @ReactMethod
-    public void initialize(final String merchantName, final String checkoutId, final String signature, final Promise promise) {
+    public void initialize(final String merchantName, final String checkoutId, final String signature, final Boolean expressCheckoutEnabled, final Promise promise) {
         MasterpassMerchantConfiguration configuration = new MasterpassMerchantConfiguration.Builder()
                 .setContext(_application)
-                .setEnvironment(MasterpassMerchantConfiguration.PRODUCTION)
+                .setEnvironment(MasterpassMerchantConfiguration.SANDBOX)
                 .setMerchantName(merchantName)
                 .setLocale(Locale.getDefault())
                 .setCheckoutId(checkoutId)
                 .setSignature(signature)
-                .setExpressCheckoutEnabled(true)
+                .setExpressCheckoutEnabled(expressCheckoutEnabled)
                 .build();
 
         _initializePromise = promise;
