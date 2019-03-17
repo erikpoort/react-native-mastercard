@@ -1,1 +1,2 @@
-This is the production framework, for sandbox testing use the sandbox feature branch
+This is the sandbox framework, this should be able to run on simulator.
+Never merge this to master.
